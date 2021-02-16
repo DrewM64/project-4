@@ -1,8 +1,8 @@
-// /* ============================================= */
-// /*              Media Queries                    */
-// /* ============================================= */
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
 
-@media (min-width: 768px) {
+@media (min-width: $brk-min) {
 
     .container {
       max-width: 1400px;
@@ -81,13 +81,15 @@
     }
     
     .nav {
+      & {
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-    }
+      }
     
-    .nav-link {
-      flex-basis: 100px;
+      &-link {
+        flex-basis: 100px;
+      }
     }
     
     .btn {

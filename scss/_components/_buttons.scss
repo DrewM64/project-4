@@ -13,21 +13,46 @@
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: map-get($button-bg, "def");
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: lighten($color: map-get($button-bg, "def"), $amount: 10%);
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: map-get($button-bg, "err");
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: lighten($color: map-get($button-bg, "err"), $amount: 10%);
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: map-get($button-bg, "inf");
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: lighten($color: map-get($button-bg, "inf"), $amount: 10%);
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: map-get($button-bg, "succ");
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: lighten($color: map-get($button-bg, "succ"), $amount: 10%);
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: map-get($button-bg, "warn");
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: lighten($color: map-get($button-bg, "warn"), $amount: 10%);
+    }
   }

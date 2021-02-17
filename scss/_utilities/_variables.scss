@@ -5,6 +5,14 @@ $color-accent-blue: #51ddfc;
 $white: #fff;
 $color-img-frame: #ccc;
 
+$button-bg: (
+     "def": #51ddfc,
+     "err": #e4757a,
+     "inf": #927bc1,
+    "succ": #63cc82,
+    "warn": #fd7856,
+);
+
 //font stacks
 $stack-lato: "Lato", sans-serif;
 
@@ -13,3 +21,4 @@ $font-weight-heavy: 700;
 
 //breakpoints
 $brk-min: "768px";
+
